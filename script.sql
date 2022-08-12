@@ -48,5 +48,48 @@ insert into historial(ID_Historial,Fecha,Perro,Monto) values (
 2500
 );
 
+#Registros para realizar consulta
+insert into dueño(DNI,Nombre,Apellido,Telefono,Dirección) values (
+75236984,
+'Maria',
+'Rodriguez',
+3512298763,
+'Av Patria 485'
+);
+insert into perro(ID_Perro,Nombre,Fecha_nac,Sexo,DNI_dueño) values (
+1,
+'Shanni',
+'2022-06-12',
+'Hembra',
+75236984
+);
+insert into historial(ID_Historial,Fecha,Perro,Monto) values (
+2,
+'2022-08-10',
+1,
+1200
+);
+
+insert into dueño(DNI,Nombre,Apellido,Telefono,Dirección) values (
+43592685,
+'Candela',
+'Ramirez',
+3511637824,
+'Bv Chacabuco 311'
+);
+insert into perro(ID_Perro,Nombre,Fecha_nac,Sexo,DNI_dueño) values (
+14,
+'Simon',
+'2018-02-27',
+'Macho',
+43592685
+);
+insert into historial(ID_Historial,Fecha,Perro,Monto) values (
+1,
+'2022-08-10',
+14,
+5400
+);
+
 #Punto 4 (punto a elección)
 UPDATE perro set Fecha_nac='2020-03-25' where Nombre='Juana';
